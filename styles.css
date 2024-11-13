@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+
+}
+
+.sidebar{
+    width: 300px;
+    background-color: #121212;
+    padding: 14px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-nav i{
+    font-size: 30px;
+
+}
+
+.library-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.library-nav i, .library-nav p{
+    color: #B7B3B6;
+    font-size: 14px;
+
+}
+
+
+
+.library-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.library-nav p{
+    font-size: 14px;
+    color: #B7B3B6;
+    cursor: pointer;
+}
+
+.Svg-biblioteca {
+    width: 16px; /* Define a largura desejada */
+    height: 16px; /* Define a altura desejada */
+    fill: #B7B3B6;
+
+}
+
+.playlist-nav, .podcast-nav{
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.playlist-nav button, .podcast-nav button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.playlist-nav p, .podcast-nav p{
+    font-size: 12px;
+}
+.footer-nav{
+    margin-top: auto;
+    
+}
+.footer-nav a{
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.button-language-nav{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 18px;
+
+}
+
+main{
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+
+}
+
+.bar-search{
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.bar-search input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.grid-artist, .grid-albums{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.card-artist, .card-album{
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-artist:hover, .card-album:hover{
+    background-color: #282828;
+}
+
+.card-artist img, .card-album img {
+    width: 100%;
+    height: auto; /* Ajusta a altura proporcionalmente */
+    max-height: 180px; /* Limite de altura maior se necessário */
+    border-radius: 50%;
+}
+
+
+.card-artist h3, .card-album h3{
+    font-size: 13px; /* Usando rem para escalabilidade */
+    padding-top: 10px;
+      
+}
+
+.card-artist p, .card-album p{
+    font-size: 14px;
+    color: #b7b3b6;
+    margin-top:1px ;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+.content h2{
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 14px; 
+    background: linear-gradient(90deg, #AF2896, #509BF5); 
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 14px;
+
+}
+
+.banner p{
+    font-size: 10px;
+}
+
+.banner button{
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Estilos do Pop-up */
+.popup {
+    display: flex; /* Inicialmente oculto */
+    position: absolute;
+    top: 125px;
+    left: 305px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    align-items: left;;
+    justify-content: center;
+
+
+
+}
+
+.popup-content {
+    background-color: #69BFFF;
+    padding: 16px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba (0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Adiciona o "cantinho de balão" */
+.popup-content::after {
+    content: "";
+    position: absolute;
+    top:60px; 
+    left: -18px; 
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent  #69BFFF transparent transparent;
+}
+
+.popup-content h2 {
+    font-size: 14px;
+    color:#020304;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  .popup-content p {
+    font-size: 12px;
+    color: #020304;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight:500;
+  }
+
+  .popup-actions {
+    display: flex;
+    justify-content:flex-end;
+    gap: 5px;
+  }
+
+.popup-actions .btn-secondary{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.popup-actions .btn-secondary:hover{
+    transform: scale(1.06);
+
+}
+.popup-actions .btn-primary{
+    width: 80px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+.popup-actions .btn-primary:hover{
+    transform: scale(1.06);
+    
+}

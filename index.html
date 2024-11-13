@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9702ef87b9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo-nav">
+                <i class="fa-brands fa-spotify"></i>
+                
+            </div>
+            <div class="library-nav">
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-biblioteca">
+                    <path
+                        d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                    </path>
+                </svg>
+
+                   
+                <p>Sua Biblioteca + </p>
+            </div>
+
+            <div class="playlist-nav">
+                <h5>Crie sua primeira playlist</h5>
+                <p>É fácil, vamos te ajudar.</p>
+                <button id="open-popup">Criar playlist</button>
+              
+                <div id="popup" class="popup">
+                  <div class="popup-content">
+                    <h2>Criar uma playlist</h2>
+                    <p>Faça login para criar e compartilhar playlists.</p>
+                    <div class="popup-actions">
+                      <button id="close-popup" class="btn-secondary">Agora Não</button>
+                      <button class="btn-primary">Entrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+
+            <div class="podcast-nav">
+                <h5>Que tal seguir um podcast novo?<h5>
+                        <p>Avisaremos você sobre novos episódios.</p>
+                        <button>Explore podcasts</button>
+            </div>
+            <div class="footer-nav">
+                <a href="#">Legal</a>
+                <a href="#">Segurança e Centro de privacidade</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre anúncios</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+            <button class="button-language-nav">
+                <i class="fa-solid fa-globe"></i>
+                Português do Brasil
+            </button>
+        </nav>
+
+
+        <main>
+            <header class="bar-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="O que você quer ouvir?">
+            </header>
+            <section class="content">
+                <h2>Artistas Populares</h2>
+                <div class="grid-artist"></div>
+                <!--Inserir javascript-->
+
+                <h2>Álbuns Populares</h2>
+                <div class="grid-albums"></div>
+                <!--Inserir javascript-->
+
+            </section>
+        </main>
+
+    </div>
+    <div class="banner">
+        <div>
+            <h2>Testar o Premium de graça</h2>
+            <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <button>Inscreva-se Grátis</button>
+    </div>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
