@@ -1,0 +1,107 @@
+@media (max-width: 768px) {
+    /* Container com flex-direction em coluna */
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    /* Esconde os elementos de navegação */
+    .playlist-nav,
+    .podcast-nav,
+    .library-nav {
+        display: none;
+    }
+
+    /* Configuração do body com flex */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Configura a área principal (main-content) */
+    .main-content {
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 150px; /* Garante espaço para a barra de navegação */
+    }
+
+    /* Sidebar que rola junto com o conteúdo */
+    .sidebar {
+        background-color: #121212;
+        color: #B3B3B3;
+        width: 100%;
+        padding: 10px 16px;
+        justify-content: space-between;
+        align-items: center;
+        order: 2;
+        margin-top: 10px; /* Pequeno espaçamento acima */
+        z-index: 10; /* Garante que a sidebar fique visível acima de outros elementos */
+        position: relative; /* Mudança aqui para garantir que não fique fixa */
+    }
+
+    /* Top bar fixada na parte superior */
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #121212;
+        padding: 10px 16px;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 100; /* Garante que a top-bar fique sobre outros elementos */
+    }
+
+    /* Footer fixado com um pouco de espaço */
+    .footer-nav {
+        background-color: #121212;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 16px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 120px;
+    }
+
+    /* Estilo dos links do footer */
+    .footer-nav a {
+        font-size: 14px;
+        color: #B3B3B3;
+        margin: 5px 10px;
+    }
+
+    .footer-nav a:hover {
+        color: #1DB954;
+    }
+
+    /* Configuração de espaços de pesquisa */
+    .bar-search {
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Grid para os artistas e álbuns */
+    .grid-artist,
+    .grid-albums {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    /* Banner com alinhamento centralizado */
+    .banner {
+        z-index: 101;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+}
