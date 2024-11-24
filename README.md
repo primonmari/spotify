@@ -20,3 +20,4 @@ O design foi inspirado no layout do Spotify, com lista de artistas e álbuns pop
 1. Clone o repositório:
    ```bash
    git clone https://github.com/primonmari/spotify.git
+2. Utilize a funcionalidade "Go Live" do VSCode ou abra o arquivo index.html no navegador
