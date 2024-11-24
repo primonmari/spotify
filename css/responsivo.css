@@ -108,4 +108,21 @@
         height: 170px;
         bottom: 0;
     }
+
+    .banner h2{
+        font-size: 18px;
+
+    }
+
+    .banner p{
+        font-size: 14px;
+    }
+
+    .banner button{
+      
+        font-weight: 600;
+        font-size: 15px;
+       
+    }
+
 }
