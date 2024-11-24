@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
         { name: 'Jorge & Mateus', image: './assets/images/artista-jorge-mateus.jpg' },
         { name: 'Zé Neto & Cristiano', image: './assets/images/artista-ze-neto.jpg' },
-        { name: 'Gusttavo Lima', image: '../assets/images/artista-gustavo-limma.jpg'
-        },
+        { name: 'Gusttavo Lima', image: './assets/images/artista-gustavo-limma.jpg'},
+        
         { name: 'Luan Santana', image: './assets/images/artista-luan-santana.jpg' },
         
         { name: 'Matheus & Kauan', image: './assets/images/artista-mateus-kauan.jpg' }
