@@ -4,7 +4,7 @@
 ## Sobre o Projeto
 Este projeto é um **clone do Spotify** desenvolvido como parte de um estudo prático sobre as funcionalidades básicas de uma aplicação web. O objetivo principal foi replicar a interface do Spotify, utilizando HTML, CSS e JavaScript para demonstrar conceitos como estilização, interatividade e pop-ups.
 
-O design foi inspirado no layout do Spotify, com funcionalidades de busca, lista de artistas e álbuns populares, e um pop-up de criação de playlist. O site está disponível para visualização [aqui no GitHub Pages](https://primonmari.github.io/spotify/).
+O design foi inspirado no layout do Spotify, com lista de artistas e álbuns populares, e um pop-up indicando a criação de playlist. O site está disponível para visualização [aqui no GitHub Pages](https://primonmari.github.io/spotify/).
 
 ## Tecnologias Utilizadas
 
