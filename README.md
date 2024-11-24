@@ -7,7 +7,7 @@ Este projeto é um **clone do Spotify** desenvolvido como parte de um estudo pr�
 **Principais funcionalidades:**
 - 🎨 Interface moderna e responsiva.
 - 📋 Listagem de artistas e álbuns populares.
-- ➕ Pop-up interativo para utilizar a criação de playlists.  
+- ➕ Pop-up para implementar a criação de playlists.  
  
 Você pode visualizar o projeto online clicando [aqui](https://primonmari.github.io/spotify/).  
 
